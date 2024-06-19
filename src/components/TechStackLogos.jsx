@@ -1,33 +1,40 @@
-import { companyLogos } from "../constants";
+import { techStackLogos } from "../constants";
 import React, { Component }from "react";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
+import BulletPointSvg from "../assets/svg/BulletPointSvg";
 
-// export const CompanyLogos = ({ className }) => {
-//   return (
-//     <div className={className}>
-//       <h5 className="tagline mb-6 text-center text-n-1/50">
-//         Tech Stack used in my projects.
-//       </h5>
-//       <ul className="grid xl:grid-cols-8 lg:grid-cols-6 md:grid-cols-4 sm:grid-cols-3 grid-cols-3 col-auto m:gap-20 gap-10">
-//         {companyLogos.map((logo, index) => (
-//           <li
-//             className="flex items-center justify-center flex-1 h-[8.5rem]"
-//             key={index}
-//           >
-//             <img src={logo} width={100} height={100} alt={logo} />
-//           </li>
-//         ))}
-//       </ul>
-//     </div>
-//   );
-// };
+function SampleNextArrow(props) {
+  const { className, onClick } = props;
+  return (
+    <div
+      className={className}
+      onClick={onClick}
+      style={{
+        color: "#0097eb",
+        borderRadius: "10px",
+        padding: "0.25px",
+        Color: "#0097eb",
+      }}
+    />
+  );
+};
+
+function SamplePrevArrow(props) {
+  const { className, style, onClick } = props;
+  return (
+    <div
+      className={className}
+      style={{ ...style, display: "block"}}
+      onClick={onClick}
+    />
+  );
+};
 
 export const TechStackLogos = ({ className }) => {
   var settings = {
     dots: true,
-    fade: true,
     infinite: true,
     speed: 500,
     slidesToShow: 6,
@@ -35,7 +42,17 @@ export const TechStackLogos = ({ className }) => {
     autoplay: true,
     pauseOnHover: true,
     swipeToSlide: true,
+    nextArrow: <SampleNextArrow className="bg-color-7 block"/>,
+    // prevArrow: <SamplePrevArrow className="color-7"/>,
     responsive: [
+      {
+        breakpoint: 4000,
+        settings: {
+          slidesToShow: 6,
+          slidesToScroll: 1,
+          infinite: true,
+        }
+      },
       {
         breakpoint: 1280,
         settings: {
@@ -70,15 +87,15 @@ export const TechStackLogos = ({ className }) => {
           dots: false,
           autoplaySpeed: 2000,
         }
+      },
+      {
+        breakpoint: 480,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1,
+          dots: false,
+        }
       }
-      // {
-      //   breakpoint: 480,
-      //   settings: {
-      //     slidesToShow: 1,
-      //     slidesToScroll: 1,
-      //     dots: false,
-      //   }
-      // }
     ]
   };
   return (
@@ -88,7 +105,7 @@ export const TechStackLogos = ({ className }) => {
       </h5>
       <div className="mt-10 w-3/4 m-auto">
           <Slider {...settings}>  
-              {companyLogos.map((logo, index) => (
+              {techStackLogos.map((logo, index) => (
                 <div
                   className="flex items-center justify-center"
                   key={index}

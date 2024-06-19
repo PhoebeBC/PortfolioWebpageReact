@@ -6,6 +6,10 @@
 @tailwind components;
 @tailwind utilities;
 
+.slick-arrow {
+    color: "#0097eb";
+}
+
 :root {
     --font-sora: "Sora", sans-serif;
     --font-code: "Source Code Pro", monospace;

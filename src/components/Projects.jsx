@@ -28,7 +28,7 @@ const Projects = () => {
                 className="md:max-w-md lg:max-w-2xl -mt-10"
                 title="View My Projects Below"
                 />
-                <div className="flex flex-wrap gap-10 mb-10 justify-center">
+                <div className="flex flex-wrap gap-10 mb-10 justify-center w-full">
                     {projects.map((item) => (
                     
                     <div
@@ -84,7 +84,7 @@ const Projects = () => {
                 ))}
                 </div>
             </div>
-          <BottomLine />
+          {/* <BottomLine /> */}
         </Section>
       );
     };

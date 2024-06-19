@@ -1,5 +1,8 @@
 import brainwave from "./brainwave.svg";
 import check from "./check.svg";
+import checkb from "./checkBlue.svg";
+import checkg from "./checkGreen.svg";
+import checkp from "./checkPurple.svg";
 import brainwaveSymbol from "./brainwave-symbol.svg";
 import brainwaveWhiteSymbol from "./brainwave-symbol-white.svg";
 import play from "./play.svg";
@@ -30,6 +33,7 @@ import sliders04 from "./sliders-04.svg";
 import loading from "./loading.png";
 import background from "./background.jpg";
 import headshot from "./headshot.png";
+import headshotnew from "./headshotnew.png";
 import nodejs from "./nodejs-original-wordmark.svg";
 import contactsvg from "./contact-svg.svg";
 import linkedin from "./linkedin.svg";
@@ -37,6 +41,28 @@ import email from "./email.svg";
 import phone from "./phone.svg";
 import whatsapp from "./whatsapp.svg";
 import location from "./location.svg";
+import globe from "./globe.svg";
+import goals from "./goals.svg";
+import learning from "./learning.svg";
+import sports from "./sport.svg";
+import aws from "./amazonwebservices-original-wordmark.svg";
+import cplusplus from "./cplusplus-original.svg";
+import csharp from "./csharp-original.svg";
+import css from "./css3-original-wordmark.svg";
+import figma from "./figma-original.svg";
+import firebase from "./firebase-original-wordmark.svg";
+import java from "./java-original-wordmark.svg";
+import jira from "./jira-original-wordmark.svg";
+import linux from "./linux-original.svg";
+import numpy from "./numpy-original-wordmark.svg";
+import pycharm from "./pycharm-original.svg";
+import scikitlearn from "./scikitlearn-original.svg";
+import selinium from "./selenium-original.svg";
+import sqlite from "./sqlite-original-wordmark.svg";
+import ubuntu from "./ubuntu-original-wordmark.svg";
+import vite from "./vitejs-original.svg";
+import vscode from "./vscode-original-wordmark.svg";
+
 
 
 import curve from "./hero/curve.png";
@@ -47,30 +73,31 @@ import homeBackground from "./home-background.png";
 import curve1 from "./collaboration/curve-1.svg";
 import curve2 from "./collaboration/curve-2.svg";
 import discord from "./collaboration/discord.png";
-import figma from "./collaboration/figma.png";
+// import figma from "./collaboration/figma.png";
 import framer from "./collaboration/framer.png";
 import notion from "./collaboration/notion.png";
 import photoshop from "./collaboration/photoshop.png";
 import protopie from "./collaboration/protopie.png";
 import raindrop from "./collaboration/raindrop.png";
 import slack from "./collaboration/slack.png";
+import CV from "./Phoebe-Badcock-Software-Developer-CV.pdf";
 
 
 import service1 from "./services/service-1.png";
 import service2 from "./services/service-2.png";
 import service3 from "./services/service-3.png";
 
-import lines from "./pricing/lines.svg";
-import stars from "./pricing/stars.svg";
+import lines from "./experience/lines.svg";
+import stars from "./experience/stars.svg";
 
-import coins from "./roadmap/coins.png";
-import done from "./roadmap/done.svg";
-import hero from "./roadmap/hero.png";
-import roadmap1 from "./roadmap/image-1.png";
-import roadmap2 from "./roadmap/image-2.png";
-import roadmap3 from "./roadmap/image-3.png";
-import roadmap4 from "./roadmap/image-4.png";
-import undone from "./roadmap/undone.svg";
+import coins from "./about/coins.png";
+import done from "./about/done.svg";
+import hero from "./about/hero.png";
+import about1 from "./about/image-1.png";
+import about2 from "./about/image-2.png";
+import about3 from "./about/image-3.png";
+import about4 from "./about/image-4.png";
+import undone from "./about/undone.svg";
 
 import notification1 from "./notification/image-1.png";
 import notification2 from "./notification/image-2.png";
@@ -96,7 +123,6 @@ import storm from "./projects/storm.png";
 
 
 import pandas from "./projects/pandas-original-wordmark.svg";
-import sqlite from "./projects/sqlite-original-wordmark.svg";
 
 import discordBlack from "./socials/discord.svg";
 import facebook from "./socials/facebook.svg";
@@ -109,6 +135,9 @@ export {
   brainwave,
   salarycalculator,
   check,
+  checkb,
+  checkg,
+  checkp,
   check2,
   loading1,
   brainwaveSymbol,
@@ -116,6 +145,7 @@ export {
   play,
   gradient,
   keras,
+  CV,
   nodejs,
   smallSphere,
   grid,
@@ -134,6 +164,22 @@ export {
   html,
   pandas,
   sqlite,
+  aws,
+  cplusplus,
+  csharp,
+  css,
+  figma,
+  firebase,
+  java,
+  jira,
+  linux,
+  numpy,
+  pycharm,
+  scikitlearn,
+  selinium,
+  ubuntu,
+  vite,
+  vscode,
   yourlogo,
   homeSmile,
   file02,
@@ -147,16 +193,20 @@ export {
   loading,
   storm,
   background,
+  globe,
+  goals,
+  learning,
+  sports,
   curve,
   robot,
   headshot,
+  headshotnew,
   heroBackground,
   homeBackground,
   curve1,
   curve2,
   contactsvg,
   discord,
-  figma,
   framer,
   notion,
   photoshop,
@@ -171,10 +221,10 @@ export {
   coins,
   done,
   hero,
-  roadmap1,
-  roadmap2,
-  roadmap3,
-  roadmap4,
+  about1,
+  about2,
+  about3,
+  about4,
   undone,
   notification1,
   notification2,
