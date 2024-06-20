@@ -3,6 +3,7 @@ import { projects } from "../constants";
 import Heading from "./Heading";
 import Section from "./Section";
 import Arrow from "../assets/svg/Arrow";
+import { check2, loading1 } from "../assets";
 import { GradientLightRT} from "./design/GradientsRightTop";
 import { GradientLightLB } from './design/GradientsLeftBottom';
 import ClipPath from "../assets/svg/ClipPath";
@@ -55,18 +56,20 @@ const Projects = () => {
                             </div>
                         </div>
                         
-                        <div className="relative flex flex-col min-h-[22rem] p-[2.4rem]">
+                        <div className="relative flex flex-col min-h-[22rem] px-[2.4rem] pt-[2.4rem] pb-[2rem]">
                             <h5 className="h5 mb-5">{item.title}</h5>
-                            <div className="body-2 mb-6 text-n-3">{item.text}</div>
-                            <div className="flex items-center mt-auto">
-                            {item.multiIcon && getIcons(item.iconUrl)}
-                            {(!item.multiIcon) && (  
+                            <div className="body-2 mb-6 text-n-3 group-hover:opacity-0">{item.text}</div>
+                            <div className="flex items-center mt-auto ">
+                            <div className='flex-wrap items-start group-hover:opacity-0'>
                             <img
                                 src={item.iconUrl}
-                                width={48}
-                                height={48}
+                                width={32}
+                                height={32}
                                 alt={item.title}
-                            />)}
+                                className='m-auto'
+                            />
+                            <p className='text-xs text-n-2 font-light'>{item.status}</p>
+                            </div>
                             <a href={item.href} className="ml-auto font-code text-xs group-hover:text-base group-hover:underline font-bold text-n-1 uppercase tracking-wider">
                                     Explore more
                             </a>

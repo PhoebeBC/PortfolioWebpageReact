@@ -62,6 +62,8 @@ import sqlite from "./sqlite-original-wordmark.svg";
 import ubuntu from "./ubuntu-original-wordmark.svg";
 import vite from "./vitejs-original.svg";
 import vscode from "./vscode-original-wordmark.svg";
+import cogwheel from "./cogwheel.svg";
+import power from "./power.svg";
 
 
 
@@ -104,10 +106,10 @@ import notification2 from "./notification/image-2.png";
 import notification3 from "./notification/image-3.png";
 import notification4 from "./notification/image-4.png";
 
-import benefitCard1 from "./projects/card-1.svg";
+import benefitCard1 from "./projects/card-blue.svg";
 import benefitCard2 from "./projects/card-2.svg";
-import benefitCard3 from "./projects/card-3.svg";
-import benefitCard4 from "./projects/card-4.svg";
+import benefitCard3 from "./projects/card-purple.svg";
+import benefitCard4 from "./projects/card-green.svg";
 import benefitCard5 from "./projects/card-5.svg";
 import benefitCard6 from "./projects/card-6.svg";
 import benefitIcon1 from "./projects/icon-1.svg";
@@ -118,6 +120,10 @@ import benefitImage2 from "./projects/image-2.png";
 import accountsformatter from "./projects/accounts-formatter.png";
 import salarycalculator from "./projects/salarycalculator.png";
 import storm from "./projects/storm.png";
+import syncstudio from "./projects/syncstudio.png";
+import mealplanner from "./projects/mealplanner.png";
+import passwordmanager from "./projects/passwordmanager.png";
+
 
 
 
@@ -139,6 +145,8 @@ export {
   checkg,
   checkp,
   check2,
+  cogwheel,
+  power,
   loading1,
   brainwaveSymbol,
   brainwaveWhiteSymbol,
@@ -187,6 +195,9 @@ export {
   plusSquare,
   recording03,
   recording01,
+  syncstudio,
+  mealplanner,
+  passwordmanager,
   disc02,
   chromecast,
   sliders04,
