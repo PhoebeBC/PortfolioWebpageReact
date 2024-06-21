@@ -12,13 +12,6 @@ const Experience = () => {
     <Section crosses id="experience" className="xl:pt-20">
       <div className="container relative">
         <div className="hidden relative justify-center mb-[6.5rem] md:flex">
-          {/* <img
-            src={smallSphere}
-            className="relative z-1"
-            width={255}
-            height={255}
-            alt="Sphere"
-          /> */}
           <div className="absolute top-1/2 left-1/2 w-[60rem] -translate-x-1/2 -translate-y-1/2 pointer-events-none">
             <img
               src={stars}
@@ -46,7 +39,7 @@ const Experience = () => {
             download
           >
             <Button
-            className="w-full mb-6"
+            className="w-full mb-6 2xl:mt-10"
             href={CV}
             >
                 <h5 className="h5 tracking-wider font-medium hover:text-[#0097eb]">

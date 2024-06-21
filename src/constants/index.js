@@ -113,12 +113,6 @@ import {
       url: "#contact",
       onlyMobile: true,
     },
-    {
-      id: "5",
-      title: "Sign in",
-      url: "#login",
-      onlyMobile: true,
-    },
   ];
   
   export const homeIcons = [homeSmile];
@@ -144,7 +138,7 @@ import {
     selinium,
     numpy,
     // aws,
-    // firebase,
+    firebase,
     vite,
     tailwind,
     figma,
@@ -172,15 +166,15 @@ import {
     },
     {
       id: "1",
-      title: "Goals",
+      title: "Career Goals",
       text: "My goal is to join a team of talented individuals who create innovative and intelligent solutions through coding and software. I aim to learn quickly and tackle exciting new challenges, collaborating in areas where I can grow. In a few years, I aspire to become a key contributor, making important decisions based on my knowledge and experience. I want to handle significant responsibilities, develop and deploy effective solutions to business problems.",
-      question: "What is My Goal?",
+      question: "Where do i want to be?",
       imageUrl: goals,
       lightRightTop: true,
     },
     {
       id: "2",
-      title: "Hobbies",
+      title: "Life Outside Work",
       text: "I love staying active and regularly participate in a variety of sports, including climbing, swimming, and gym sessions. Additionally, I am a committed member of the Milton Keynes Hockey Club, playing for the women's first team and the mixed hockey team. Being active not only keeps me healthy but also allows me to stay connected with friends and enjoy the camaraderie of team environments.",
       question: "What Else Do I Do?",
       imageUrl: sports,
@@ -188,19 +182,19 @@ import {
     },
     {
       id: "3",
-      title: "Other Interests",
+      title: "Journeys & Joys",
       text: "Traveling to various countries has given me valuable insights into different cultures and their values. I enjoy learning during these trips, always finding new perspectives or approaches to incorporate into my own life. I've been following Formula 1 for the past five years, supporting McLaren. I love the drama, unpredictability, and all the factors that need to be considered for the best performance on race weekends. Recently, I started embroidery as a relaxing hobby, which helps me unwind and prevents me from mindlessly scrolling.",
-      question: "What are my Other Interests?",
+      question: "What else am i interested in?",
       imageUrl: globe,
       colorful: true,
     },
   ];
   
   export const contactMessage =
-    "Click on an icon to go to the website or to copy the information.";
+    "Click on an icon to access the contact information.";
 
   export const contactText0 = "I am always excited to explore new challenges and opportunities.";
-  export const contactText1 = "If you think my skills and experiences align with your needs, please feel free to reach out.";
+  export const contactText1 = "If you think my skills and experiences could provide value, please feel free to reach out.";
   // export const contactText2 = "";
 
   export const contactContent = [
@@ -249,7 +243,7 @@ import {
       icon: email,
       width: 65,
       height: 65,
-      url: "phoebe.badcock@mail.com",
+      url: "#contactform",
       link: false,
     },
     {
@@ -259,7 +253,7 @@ import {
       icon: phone,
       width: 65,
       height: 65,
-      url: "+447845733150",
+      url: "#contactform",
       link: false,
     },
     {
@@ -269,7 +263,7 @@ import {
       icon: location,
       width: 50,
       height: 50,
-      url: "https://www.google.co.uk/maps/place/Northampton+NN7/@52.2586856,-1.9411493,8.71z/data=!4m6!3m5!1s0x487704236e4aa273:0x99bdac99537a1d8d!8m2!3d52.1669582!4d-0.8477761!16s%2Fg%2F11bytnmdgv?entry=ttu",
+      url: "https://www.google.com/maps/place/Northampton/@52.070175,-1.7144943,8.79z/data=!4m6!3m5!1s0x487704236e4aa273:0xcdf495d0d9e86209!8m2!3d52.237065!4d-0.8944421!16zL20vMGgzMF8?entry=ttu",
       link: true,
     },
     {
@@ -279,7 +273,8 @@ import {
       icon: whatsapp,
       width: 55,
       height: 55,
-      url: "https://wa.me/447845733150"
+      url: "https://wa.me/447845733150",
+      link: true,
     },
     // {
     //   id: "6",

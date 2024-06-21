@@ -47,10 +47,10 @@ export const BackgroundCircles = ({ parallaxRef }) => {
       <Rings />
 
       {/* Moving background colored circle balls */}
-      <MouseParallax strength={0.05} enableOnTouchDevice isAbsolutelyPositioned>
+      <MouseParallax enableOnTouchDevice isAbsolutelyPositioned>
         <div className="hidden lg:block absolute bottom-1/2 left-1/2 w-0.25 h-1/2 origin-bottom rotate-[46deg]">
           <div
-            className={`w-2 h-2 -ml-1 xl:-mt-36 bg-gradient-to-b from-[#AC6AFF] to-[#1a1a38] rounded-full transition-transform duration-500 ease-out ${
+            className={`w-2 h-2 -ml-1 xl:-mt-28 bg-gradient-to-b from-[#AC6AFF] to-[#1a1a38] rounded-full transition-transform duration-500 ease-out ${
               mounted ? "translate-y-0 opacity-100" : "translate-y-10 opacity-0"
             }`}
           />
@@ -58,7 +58,7 @@ export const BackgroundCircles = ({ parallaxRef }) => {
 
         <div className="hidden lg:block absolute bottom-1/2 left-1/2 w-0.25 h-1/2 origin-bottom -rotate-[56deg]">
           <div
-            className={`w-4 h-4 -ml-1 -mt-32 bg-gradient-to-b from-[#7ADB78] to-[#1A1A32] rounded-full transition-transform duration-500 ease-out ${
+            className={`w-4 h-4 ml-10 -mt-10 bg-gradient-to-b from-[#7ADB78] to-[#1A1A32] rounded-full transition-transform duration-500 ease-out ${
               mounted ? "translate-y-0 opacity-100" : "translate-y-10 opacity-0"
             }`}
           />
@@ -82,7 +82,7 @@ export const BackgroundCircles = ({ parallaxRef }) => {
 
         <div className="hidden lg:block absolute bottom-1/2 left-1/2 w-0.25 h-1/2 origin-bottom -rotate-[85deg]">
           <div
-            className={`w-6 h-6 ml-20 -mt-5 bg-gradient-to-b from-[#0097eb] to-[#1A1A32] rounded-full transition-transform duration-500 ease-out ${
+            className={`w-6 h-6 ml-20 mt-10 bg-gradient-to-b from-[#0097eb] to-[#1A1A32] rounded-full transition-transform duration-500 ease-out ${
               mounted ? "translate-y-0 opacity-100" : "translate-y-10 opacity-0"
             }`}
           />

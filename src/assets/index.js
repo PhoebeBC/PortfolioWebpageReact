@@ -64,6 +64,7 @@ import vite from "./vitejs-original.svg";
 import vscode from "./vscode-original-wordmark.svg";
 import cogwheel from "./cogwheel.svg";
 import power from "./power.svg";
+import tablogo from "./tab-logo.png";
 
 
 
@@ -82,6 +83,7 @@ import photoshop from "./collaboration/photoshop.png";
 import protopie from "./collaboration/protopie.png";
 import raindrop from "./collaboration/raindrop.png";
 import slack from "./collaboration/slack.png";
+
 import CV from "./Phoebe-Badcock-Software-Developer-CV.pdf";
 
 
@@ -192,6 +194,7 @@ export {
   homeSmile,
   file02,
   searchMd,
+  tablogo,
   plusSquare,
   recording03,
   recording01,

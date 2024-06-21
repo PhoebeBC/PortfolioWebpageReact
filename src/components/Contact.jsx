@@ -1,20 +1,26 @@
 import { contactsvg, check } from "../assets";
 import { contactApps, contactContent, contactMessage } from "../constants";
 import Button from "./Button";
+import ContactForm from "./ContactForm";
 import Section from "./Section";
 import { LeftCurve, RightCurve } from "./design/Contact";
+import Heading from "./Heading";
 
 const Contact = () => {
   return (
-    <Section crosses id="contact">
-      <div className="container lg:flex">
-            <div className="lg:max-w-[25rem]">
-                <h2 className="h2 mb-4 md:mb-8">
+    <Section crosses id="contact" className="lg:pb-10 xl:pb-10">
+      <div className="container ">
+      <h2 className="h2 mb-4 md:mb-16 lg:px-10">
                 Want to know more about me or my projects? 
                 </h2>  
+            <div className="lg:flex lg:px-10">
+            <div className="lg:max-w-[25rem]">
+                {/* <h2 className="h2 mb-4 md:mb-8">
+                Want to know more about me or my projects? 
+                </h2>   */}
                 <h2 className="h1 mb-4 md:mb-8 tracking-wider">Get&nbsp;in&nbsp;touch!</h2>
           
-                <ul className="lg:max-w-[25rem] mb-10">
+                <ul className="lg:max-w-[24rem] mb-10">
                     {contactContent.map((item) => (
                     <li className="py-3 mb-3" key={item.id}>
                         <div className="flex items-centre">
@@ -27,17 +33,19 @@ const Contact = () => {
                     </li>
                     ))}
                 </ul>
-
-                <Button className="">Let's Connect</Button>
+                {/* <div className="lg:text-left place-content-center"> */}
+                  <Heading className="" tag="Let's Connect"/>
+                {/* </div> */}
+            <p className="body-2 mb-8 text-n-4 lg:w-[26rem]  lg:-mt-10 lg:mx-auto lg:text-left text-center">
+              {contactMessage}
+            </p>
             </div>
 
         <div className="lg:ml-auto xl:w-[38rem] mt-4">
-          <p className="body-2 mb-8 text-n-4 md:mb-16 lg:mb-32 lg:w-[22rem] lg:mx-auto lg:text-left text-center">
-            {contactMessage}
-          </p>
+          
             
         {/* outer circle */}
-          <div className="relative mt-52 left-1/2 flex w-[25rem] aspect-square border border-n-6 rounded-full -translate-x-1/2 scale:75 md:scale-100">
+          <div className="relative xl:mt-10 mt-20 left-1/2 flex w-[25rem] aspect-square border border-n-6 rounded-full -translate-x-1/2 scale:75 md:scale-100">
             {/* Inner circle */}
             <div className="flex w-60 aspect-square m-auto border border-n-6 rounded-full bg-conic-gradient">
                 {/* circle around conact icon bg-conic-gradient*/}
@@ -66,7 +74,7 @@ const Contact = () => {
                       app.rotation * 45
                     }`} 
                   >
-                    <a className="m-auto" href={app.url} target="_blank"><img
+                    <a className="m-auto" href={app.url} target={`${app.link ? "_blank" : ""}`}><img
                       className="m-auto"
                       width={app.width}
                       height={app.height}
@@ -83,6 +91,7 @@ const Contact = () => {
             <RightCurve />
           </div>
         </div>
+      </div>
       </div>
     </Section>
   );

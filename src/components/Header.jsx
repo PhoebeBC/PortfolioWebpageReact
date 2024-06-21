@@ -1,7 +1,7 @@
-import { brainwave } from "../assets";
+import { brainwave, tablogo } from "../assets";
 import { navigation } from "../constants";
 import { useLocation } from 'react-router-dom';
-import { disablePageScroll, enablePageScroZll } from "scroll-lock";
+import { disablePageScroll, enablePageScroll } from "scroll-lock";
 import Button from "./Button";
 import MenuSvg from "../assets/svg/MenuSvg";
 import { HamburgerMenu } from "./design/Header";
@@ -25,16 +25,17 @@ const header = () => {
     //Making sure when mobile nav is open, can't scroll and when we choose section the nav will close automatically
     const handleClick = () => {
         if (!openNavigation) return;
-
-        setOpenNavigation(false);
-        enablePageScroll();
+        else return(
+            setOpenNavigation(false),
+            enablePageScroll()
+        )
     };
     return (
         <div  className={`fixed top-0 left-0 w-full z-50  border-b border-n-6 lg:bg-n-8/90 lg:backdrop-blur-sm ${
             openNavigation ? "bg-n-8" : "bg-n-8/90 backdrop-blur-sm"
           }`}>
         <div className="flex items-center px-5 lg:px-7.5 xl:px-10 max-lg:py-4">
-                <a className=" h1 block w-[12rem] overflow-visible font-code text-3xl uppercase text-n-1 transition-colors" href="#home">
+                <a className="h1 block w-[12rem] overflow-visible font-code text-3xl uppercase text-n-1 transition-colors" href="#home">
                     Phoebe&nbsp;Badcock
                 </a>
                 <nav  className={`${
@@ -46,7 +47,7 @@ const header = () => {
                     key={item.id}
                     href={item.url}
                     onClick={handleClick}
-                    className={`block relative font-code text-2xl uppercase text-n-1 transition-colors hover:text-color-1 ${
+                    className={`block relative font-code text-2xl uppercase text-n-1 transition-colors hover:text-color-7 ${
                     item.onlyMobile ? "lg:hidden" : ""
                     } px-6 py-6 md:py-8 lg:-mr-0.25 lg:text-sm lg:font-semibold ${
                     item.url === pathname.hash
