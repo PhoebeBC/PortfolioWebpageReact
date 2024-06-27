@@ -1,5 +1,5 @@
 import Section from "./Section";
-import {stars} from "../assets";
+import {stars} from "../assets/index.jsx";
 import Button from "./Button";
 import { useFormData } from 'herotofu-react';
 import MessageStatus from "./MassageStatus";

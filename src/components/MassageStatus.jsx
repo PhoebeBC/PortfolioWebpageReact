@@ -1,6 +1,6 @@
 import React from 'react';
 import MessageStatusSvg from "../assets/svg/MessageStatusSvg";
-import { check2, loading1, benefitCard3, benefitCard4} from "../assets";
+import { check2, loading1, benefitCard3, benefitCard4} from "../assets/index.jsx";
 
 const MessageStatus = ({ className, children, px, sent }) => {
     const classes = `relative font-code inline-flex items-center justify-center h-11 color-n-1 ${

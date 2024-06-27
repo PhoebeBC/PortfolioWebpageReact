@@ -1,5 +1,5 @@
-import { brainwave, tablogo } from "../assets";
-import { navigation } from "../constants";
+import { brainwave, tablogo } from "../assets/index.jsx";
+import { navigation } from "../constants/index.jsx";
 import { useLocation } from 'react-router-dom';
 import { disablePageScroll, enablePageScroll } from "scroll-lock";
 import Button from "./Button";

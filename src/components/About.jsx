@@ -1,10 +1,7 @@
-import Button from "./Button";
 import Heading from "./Heading";
 import Section from "./Section";
-import Tagline from "./Tagline";
-import { about } from "../constants";
-import { CV, check2, grid, loading1, homeBackground } from "../assets";
-import { Gradient } from "./design/About";
+import { about } from "../constants/index.jsx";
+import { grid } from "../assets/index.jsx";
 import { GradientLightRT} from "./design/GradientsRightTopAbout";
 import { GradientLightLB } from './design/GradientsLeftBottomAbout';
 

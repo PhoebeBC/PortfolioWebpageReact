@@ -1,9 +1,9 @@
 import Section from "./Section";
-import {stars} from "../assets";
+import {stars} from "../assets/index.jsx";
 import Heading from "./Heading";
 import ExperienceList from "./ExperienceList";
 import { LeftLine, RightLine } from "./design/Experience";
-import { CV } from "../assets";
+import { CV } from "../assets/index.jsx";
 import { BottomLine } from './design/Experience';
 import Button from "./Button";
 

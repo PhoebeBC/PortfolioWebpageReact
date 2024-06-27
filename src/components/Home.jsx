@@ -1,4 +1,4 @@
-import { background, curve, headshot, headshotnew, homeBackground } from "../assets";
+import { background, curve, headshot, headshotnew, homeBackground } from "../assets/index.jsx";
 import Section from "./Section";
 import { BackgroundCircles, BottomLine, Gradient } from "./design/Home";
 import { ScrollParallax } from "react-just-parallax";

@@ -1,9 +1,9 @@
 import React from 'react';
-import { projects } from "../constants";
+import { projects } from "../constants/index.jsx";
 import Heading from "./Heading";
 import Section from "./Section";
 import Arrow from "../assets/svg/Arrow";
-import { check2, loading1 } from "../assets";
+import { check2, loading1 } from "../assets/index.jsx";
 import { GradientLightRT} from "./design/GradientsRightTop";
 import { GradientLightLB } from './design/GradientsLeftBottom';
 import ClipPath from "../assets/svg/ClipPath";
@@ -31,7 +31,7 @@ const Projects = () => {
                 />
                 <div className="flex flex-wrap gap-10 mb-10 justify-center w-full">
                     {projects.map((item) => (
-                    
+
                     <div
                         className="group block relative bg-no-repeat bg-[length:100%_100%] p-0.5 md:max-w-[24rem]"
                         style={{ 
@@ -70,7 +70,7 @@ const Projects = () => {
                             />
                             <p className='text-xs text-n-2 font-light'>{item.status}</p>
                             </div>
-                            <a href={item.href} className="ml-auto font-code text-xs group-hover:text-base group-hover:underline font-bold text-n-1 uppercase tracking-wider">
+                            <a href={item.href} target="_blank" className="ml-auto font-code text-xs group-hover:text-base group-hover:underline font-bold text-n-1 uppercase tracking-wider">
                                     Explore more
                             </a>
                             <Arrow />

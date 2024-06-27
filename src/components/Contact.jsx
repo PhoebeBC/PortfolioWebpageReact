@@ -1,5 +1,5 @@
-import { contactsvg, check } from "../assets";
-import { contactApps, contactContent, contactMessage } from "../constants";
+import { contactsvg, check } from "../assets/index.jsx";
+import { contactApps, contactContent, contactMessage } from "../constants/index.jsx";
 import Button from "./Button";
 import ContactForm from "./ContactForm";
 import Section from "./Section";

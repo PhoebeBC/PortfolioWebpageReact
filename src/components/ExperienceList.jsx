@@ -1,5 +1,5 @@
-import { check } from "../assets";
-import { experience } from "../constants";
+import { check } from "../assets/index.jsx";
+import { experience } from "../constants/index.jsx";
 import BulletPointSvg from "../assets/svg/BulletPointSvg";
 
 const ExperienceList = () => {

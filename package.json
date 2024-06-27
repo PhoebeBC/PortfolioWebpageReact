@@ -1,7 +1,7 @@
 {
-  "name": "react_swift_website",
-  "private": true,
-  "version": "0.0.0",
+  "name": "phoebe_website",
+  "private": false,
+  "version": "1.0.0",
   "type": "module",
   "scripts": {
     "dev": "vite",

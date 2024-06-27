@@ -1,4 +1,4 @@
-import { techStackLogos } from "../constants";
+import { techStackLogos } from "../constants/index.jsx";
 import React, { Component }from "react";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
