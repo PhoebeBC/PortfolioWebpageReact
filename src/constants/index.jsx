@@ -1,15 +1,9 @@
 import {
     accountsformatter,
     aws,
-    benefitIcon1,
-    benefitIcon2,
-    benefitIcon3,
-    benefitIcon4,
-    benefitCard1,
-    benefitCard2,
-    benefitCard3,
-    benefitCard4,
-    benefitImage2,
+    blueCard,
+    purpleCard,
+    greenCard,
     check,
     checkb,
     checkg,
@@ -280,20 +274,6 @@ import {
       url: "https://wa.me/447845733150",
       link: true,
     },
-    // {
-    //   id: "6",
-    //   title: "Framer",
-    //   icon: framer,
-    //   width: 26,
-    //   height: 34,
-    // },
-    // {
-    //   id: "7",
-    //   title: "Raindrop",
-    //   icon: raindrop,
-    //   width: 38,
-    //   height: 32,
-    // },
   ];
   
   export const experience = [
@@ -332,14 +312,19 @@ import {
         "Weekly Crdit Update: Investigated KPI trends, presented results and recomended solutions to stakeholders every Friday to track company progress.",
       ],
     },
-  ];
+  ];  
+  
+  export const cardBlue = `url('data:image/svg+xml,<svg preserveAspectRatio="none" width="384" height="366" viewBox="0 0 384 366" fill="%230E0C15" xmlns="http://www.w3.org/2000/svg"><path vector-effect="non-scaling-stroke" d="M32 1H319.453C328.037 1 336.238 4.5601 342.1 10.832L374.648 45.6545C380.015 51.3966 383 58.9629 383 66.8225V334C383 351.121 369.121 365 352 365H32C14.8792 365 1 351.121 1 334V32C1 14.8792 14.8792 1 32 1Z" stroke="white" stroke-opacity="0.15" stroke-width="2"/><path vector-effect="non-scaling-stroke" d="M32 1H319.453C328.037 1 336.238 4.5601 342.1 10.832L374.648 45.6545C380.015 51.3966 383 58.9629 383 66.8225V334C383 351.121 369.121 365 352 365H32C14.8792 365 1 351.121 1 334V32C1 14.8792 14.8792 1 32 1Z" stroke="url(%23paint0_linear_333_9188)" stroke-opacity="0.85" stroke-width="2"/><defs><linearGradient id="paint0_linear_333_9188" x1="192" y1="0" x2="192" y2="366" gradientUnits="userSpaceOnUse"><stop stop-color="%230097eb"/><stop offset="0.562842" stop-color="%23fFF" stop-opacity="0"/></linearGradient></defs></svg>')`;
+  export const cardGreen = `url('data:image/svg+xml,<svg preserveAspectRatio="none" width="384" height="366" viewBox="0 0 384 366" fill="%230E0C15" xmlns="http://www.w3.org/2000/svg"><path vector-effect="non-scaling-stroke" d="M32 1H319.453C328.037 1 336.238 4.5601 342.1 10.832L374.648 45.6545C380.015 51.3966 383 58.9629 383 66.8225V334C383 351.121 369.121 365 352 365H32C14.8792 365 1 351.121 1 334V32C1 14.8792 14.8792 1 32 1Z" stroke="white" stroke-opacity="0.15" stroke-width="2"/><path vector-effect="non-scaling-stroke" d="M32 1H319.453C328.037 1 336.238 4.5601 342.1 10.832L374.648 45.6545C380.015 51.3966 383 58.9629 383 66.8225V334C383 351.121 369.121 365 352 365H32C14.8792 365 1 351.121 1 334V32C1 14.8792 14.8792 1 32 1Z" stroke="url(%23paint0_linear_333_9187)" stroke-opacity="0.85" stroke-width="2"/><defs><linearGradient id="paint0_linear_333_9187" x1="192" y1="0" x2="192" y2="366" gradientUnits="userSpaceOnUse"><stop stop-color="%237ADB78"/><stop offset="0.562842" stop-color="%23FFF" stop-opacity="0"/></linearGradient></defs></svg>')`;
+  export const cardPurple = `url('data:image/svg+xml,<svg preserveAspectRatio="none" width="384" height="366" viewBox="0 0 384 366" fill="%230E0C15" xmlns="http://www.w3.org/2000/svg"><path vector-effect="non-scaling-stroke" d="M32 1H319.453C328.037 1 336.238 4.5601 342.1 10.832L374.648 45.6545C380.015 51.3966 383 58.9629 383 66.8225V334C383 351.121 369.121 365 352 365H32C14.8792 365 1 351.121 1 334V32C1 14.8792 14.8792 1 32 1Z" stroke="white" stroke-opacity="0.15" stroke-width="2"/><path vector-effect="non-scaling-stroke" d="M32 1H319.453C328.037 1 336.238 4.5601 342.1 10.832L374.648 45.6545C380.015 51.3966 383 58.9629 383 66.8225V334C383 351.121 369.121 365 352 365H32C14.8792 365 1 351.121 1 334V32C1 14.8792 14.8792 1 32 1Z" stroke="url(%23paint0_linear_333_9185)" stroke-opacity="0.85" stroke-width="2"/><defs><linearGradient id="paint0_linear_333_9185" x1="192" y1="0" x2="192" y2="366" gradientUnits="userSpaceOnUse"><stop stop-color="%23AC6AFF"/><stop offset="0.562842" stop-color="%23FFF" stop-opacity="0"/></linearGradient></defs></svg>')`;
+
   
   export const projects = [
     {
       id: "0",
       title: "Accounts Formatter",
       text: "Created a Tkinter application for The Tax Departemnt Ltd. Information is parsed, formatted and manipulated into the required outputs, with a database to recognise new clients and a logger for tracking sucess.",
-      backgroundUrl: benefitCard3,
+      backgroundUrl: cardBlue,
       status: "Complete",
       iconUrl: check2,
       imageUrl: accountsformatter,
@@ -350,7 +335,7 @@ import {
       id: "1",
       title: "Salary Band Estimator",
       text: "Researched machine learning models, tested them aginst my data checking for high accuary scores, created trained and tested the random forest regressoer model then hosted using pythonanywhere.",
-      backgroundUrl: benefitCard4,
+      backgroundUrl: cardGreen,
       status: "Complete",
       iconUrl: check2,
       imageUrl: salarycalculator,
@@ -360,7 +345,7 @@ import {
       id: "2",
       title: "Storm Team Manager",
       text: "Collaberated to build a website to attract players to our summer league team, Storm. Allows current players to sign in and view match details and the managers to share team sheets, rules and payment information.",
-      backgroundUrl: benefitCard1,
+      backgroundUrl: cardPurple,
       status: "In Progress",
       iconUrl: cogwheel,
       href: "https://github.com/PhoebeBC/Storm-Website",
@@ -371,7 +356,7 @@ import {
       id: "3",
       title: "Sync Studio App",
       text: "Creating an android application to combine songs for a playlist. The host will have their own studio which others can join and add songs to. This will connects to the hosts streaming service.",
-      backgroundUrl: benefitCard4,
+      backgroundUrl: cardGreen,
       status: "In Progress",
       iconUrl: cogwheel,
       imageUrl: syncstudio,
@@ -381,7 +366,7 @@ import {
       id: "4",
       title: "Meal Planner",
       text: "Removes the pain of having to decisde what to have for dinner each week. Once the user has entered their favourite recipies the app wil suggest their meals for the weeks.",
-      backgroundUrl: benefitCard1,
+      backgroundUrl: cardPurple,
       status: "Coming Soon",
       iconUrl: power,
       imageUrl: mealplanner,
@@ -390,7 +375,7 @@ import {
       id: "5",
       title: "Password Manager",
       text: "Secure way for users to store passwords and login details. Will include a veriety of incryption and decryption methods.",
-      backgroundUrl: benefitCard3,
+      backgroundUrl: cardBlue,
       status: "Coming Soon",
       iconUrl: power,
       imageUrl: passwordmanager,

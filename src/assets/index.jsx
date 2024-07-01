@@ -108,10 +108,10 @@ import notification2 from "./notification/image-2.png";
 import notification3 from "./notification/image-3.png";
 import notification4 from "./notification/image-4.png";
 
-import benefitCard1 from "./projects/card-blue.svg";
+import blueCard from "./projects/card-blue.svg";
 import benefitCard2 from "./projects/card-2.svg";
-import benefitCard3 from "./projects/card-purple.svg";
-import benefitCard4 from "./projects/card-green.svg";
+import purpleCard from "./projects/card-purple.svg";
+import greenCard from "./projects/card-green.svg";
 import benefitCard5 from "./projects/card-5.svg";
 import benefitCard6 from "./projects/card-6.svg";
 import benefitIcon1 from "./projects/icon-1.svg";
@@ -244,10 +244,10 @@ export {
   notification2,
   notification3,
   notification4,
-  benefitCard1,
+  blueCard,
   benefitCard2,
-  benefitCard3,
-  benefitCard4,
+  purpleCard,
+  greenCard,
   benefitCard5,
   benefitCard6,
   benefitIcon1,

@@ -7,7 +7,7 @@ import { check2, loading1 } from "../assets/index.jsx";
 import { GradientLightRT} from "./design/GradientsRightTop";
 import { GradientLightLB } from './design/GradientsLeftBottom';
 import ClipPath from "../assets/svg/ClipPath";
-import { BottomLine } from './design/Projects';
+import { svgImg } from './design/Projects';
 
 const Projects = () => {
     const getIcons = (iconList) => {
@@ -31,17 +31,17 @@ const Projects = () => {
                 />
                 <div className="flex flex-wrap gap-10 mb-10 justify-center w-full">
                     {projects.map((item) => (
-
                     <div
                         className="group block relative bg-no-repeat bg-[length:100%_100%] p-0.5 md:max-w-[24rem]"
                         style={{ 
-                            backgroundImage: `url(${item.backgroundUrl})`,
+                            backgroundImage: item.backgroundUrl
                         }}
                         key={item.id}
                     >
+                        <svgImg svg={check2} />
                         <div
                         className="absolute inset-0.5 bg-n-8 opacity-0 transition-opacity group-hover:opacity-50"
-                        style={{ clipPath: "url(#benefits)" }}
+                        style={{ clipPath: "url(#projectsBox)" }}
                     >
                             <div className="absolute inset-0">
                             {item.imageUrl && (

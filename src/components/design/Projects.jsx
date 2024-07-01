@@ -12,3 +12,15 @@ export const BottomLine = () => {
   );
 };
 
+export const svgImg = ({svg}) => {
+  return (
+    <>
+      <img
+        src={svg}
+        width={380}
+        height={362}
+        />
+    </>
+  );
+};
+
