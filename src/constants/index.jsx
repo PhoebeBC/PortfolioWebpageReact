@@ -126,7 +126,7 @@ import {
     python, 
     // java,
     // cplusplus,
-    // csharp,
+    csharp,
     github, 
     postgresql, 
     sqlite,
@@ -157,7 +157,7 @@ import {
     {
       id: "0",
       title: "Learning & Creating",
-      text: "After discovering my passion for programming, I decided to independently educate myself and pursue a career in software development. Over the past six months, I have been dedicated to understanding fundamental concepts and building various projects to apply and enhance my skills. One notable accomplishment was developing software for a business, which significantly improved the efficiency of a labor-intensive process.",
+      text: "After discovering my passion for programming, I decided to independently educate myself and pursue a career in software development. Over the past six months, I have been dedicated to understanding fundamental concepts and building various projects to apply and enhance my skills. One notable accomplishment was developing software for a business, which significantly improved the efficiency of a labour-intensive process.",
       question: "What am I doing Now?",
       imageUrl: learning,
       colorful: true,
@@ -284,7 +284,7 @@ import {
       check: checkg,
       features: [
         "Bachelor of Science in Mathematics: First Class with Honors.",
-        "Relavent University Modules: Maths by Computer (82%), JAVA Programming for Scientists (75%).",
+        "Relevant University Modules: Maths by Computer (82%), JAVA Programming for Scientists (75%).",
         "Other modules covered statistics, analysis, algebra, logic and game theory.",
         "A Levels: A*A*AA Further Maths, Maths, Physics, Chemistry",
         "GCSEs: 11 - A*(6), A(5) including Maths and English",
@@ -309,7 +309,7 @@ import {
       features: [
         "Customer Outcomes Review: Successfully completed FCA requested review of the full history of the company. This was achieved by constructing insightful data tables within the Postgres Database from researching through all historical data and obtaining retroactive data from the credit bureaus.",
         "CRA Handling: Effectively oversaw credit reporting, including regular testing, checks and the sharing of the files to credit bureaus thereby fostering strong relationships through clear communication.",
-        "Weekly Crdit Update: Investigated KPI trends, presented results and recomended solutions to stakeholders every Friday to track company progress.",
+        "Weekly Credit Update: Investigated KPI trends, presented results and recommended solutions to stakeholders every Friday to track company progress.",
       ],
     },
   ];  
@@ -323,7 +323,7 @@ import {
     {
       id: "0",
       title: "Accounts Formatter",
-      text: "Created a Tkinter application for The Tax Departemnt Ltd. Information is parsed, formatted and manipulated into the required outputs, with a database to recognise new clients and a logger for tracking sucess.",
+      text: "Created a Tkinter application for The Tax Department Ltd. Information is parsed, formatted and manipulated into the required outputs, with a database to recognise new clients and a logger for tracking success.",
       backgroundUrl: cardBlue,
       status: "Complete",
       iconUrl: check2,
@@ -334,7 +334,7 @@ import {
     {
       id: "1",
       title: "Salary Band Estimator",
-      text: "Researched machine learning models, tested them aginst my data checking for high accuary scores, created trained and tested the random forest regressoer model then hosted using pythonanywhere.",
+      text: "Researched machine learning models, tested them against my data checking for high accuracy scores, created trained and tested the random forest regressor model then hosted using PythonAnywhere.",
       backgroundUrl: cardGreen,
       status: "Complete",
       iconUrl: check2,
@@ -344,7 +344,7 @@ import {
     {
       id: "2",
       title: "Storm Team Manager",
-      text: "Collaberated to build a website to attract players to our summer league team, Storm. Allows current players to sign in and view match details and the managers to share team sheets, rules and payment information.",
+      text: "Collaborated to build a website to attract players to our summer league team, Storm. Allows current players to sign in and view match details and the managers to share team sheets, rules and payment information.",
       backgroundUrl: cardPurple,
       status: "In Progress",
       iconUrl: cogwheel,
@@ -355,26 +355,26 @@ import {
     {
       id: "3",
       title: "Sync Studio App",
-      text: "Creating an android application to combine songs for a playlist. The host will have their own studio which others can join and add songs to. This will connects to the hosts streaming service.",
+      text: "Creating an android application to combine songs for a playlist. The host will have their own studio which others can join and add songs to. This will connect to the hosts streaming service.",
       backgroundUrl: cardGreen,
-      status: "In Progress",
-      iconUrl: cogwheel,
+      status: "Coming Soon",
+      iconUrl: power,
       imageUrl: syncstudio,
       lightLeftBottom: true,
     },
     {
       id: "4",
       title: "Meal Planner",
-      text: "Removes the pain of having to decisde what to have for dinner each week. Once the user has entered their favourite recipies the app wil suggest their meals for the weeks.",
+      text: "Removes the pain of having to decide what to have for dinner each week. Once the user has entered their favourite recipes the app will suggest their meals for the weeks.",
       backgroundUrl: cardPurple,
-      status: "Coming Soon",
-      iconUrl: power,
+      status: "In Progress",
+      iconUrl: cogwheel,
       imageUrl: mealplanner,
     },
     {
       id: "5",
       title: "Password Manager",
-      text: "Secure way for users to store passwords and login details. Will include a veriety of incryption and decryption methods.",
+      text: "Secure way for users to store passwords and login details. Will include a variety of encryption and decryption methods.",
       backgroundUrl: cardBlue,
       status: "Coming Soon",
       iconUrl: power,
@@ -383,35 +383,35 @@ import {
     },
   ];
   
-  export const socials = [
-    {
-      id: "0",
-      title: "Discord",
-      iconUrl: discordBlack,
-      url: "#",
-    },
-    {
-      id: "1",
-      title: "Twitter",
-      iconUrl: twitter,
-      url: "#",
-    },
-    {
-      id: "2",
-      title: "Instagram",
-      iconUrl: instagram,
-      url: "#",
-    },
-    {
-      id: "3",
-      title: "Telegram",
-      iconUrl: telegram,
-      url: "#",
-    },
-    {
-      id: "4",
-      title: "Facebook",
-      iconUrl: facebook,
-      url: "#",
-    },
-  ];
+  // export const socials = [
+  //   {
+  //     id: "0",
+  //     title: "Discord",
+  //     iconUrl: discordBlack,
+  //     url: "#",
+  //   },
+  //   {
+  //     id: "1",
+  //     title: "Twitter",
+  //     iconUrl: twitter,
+  //     url: "#",
+  //   },
+  //   {
+  //     id: "2",
+  //     title: "Instagram",
+  //     iconUrl: instagram,
+  //     url: "#",
+  //   },
+  //   {
+  //     id: "3",
+  //     title: "Telegram",
+  //     iconUrl: telegram,
+  //     url: "#",
+  //   },
+  //   {
+  //     id: "4",
+  //     title: "Facebook",
+  //     iconUrl: facebook,
+  //     url: "#",
+  //   },
+  // ];
